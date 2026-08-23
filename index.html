@@ -519,6 +519,17 @@
         font-size: 18px;
         margin-bottom: 2px;
       }
+      .company-link {
+        color: var(--text);
+        border-bottom: 1px solid var(--border);
+        transition:
+          color 0.15s ease,
+          border-color 0.15s ease;
+      }
+      .company-link:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
       .log-meta {
         font-family: var(--mono);
         font-size: 12.5px;
@@ -746,10 +757,7 @@
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
-        <a
-          href="Jeet_Resume.pdf"
-          download
-          class="btn btn-ghost nav-resume"
+        <a href="Jeet_Resume.pdf" download class="btn btn-ghost nav-resume"
           >Resume ↓</a
         >
       </div>
@@ -771,10 +779,7 @@
               microservices, currently at Tech Mahindra GmbH.
             </p>
             <div class="hero-cta">
-              <a
-                href="Jeet_Resume.pdf"
-                download
-                class="btn btn-primary"
+              <a href="Jeet_Resume.pdf" download class="btn btn-primary"
                 >Download Resume ↓</a
               >
               <a
@@ -914,62 +919,125 @@
       </section>
 
       <!-- EXPERIENCE -->
-  <section id="experience" class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">experience</div>
-      <h2>Where I've worked</h2>
-    </div>
-    <div class="log reveal">
-      <div class="log-entry">
-        <span class="log-hash">#current</span>
-        <h3>Lead Developer — <a href="https://www.techmahindra.com" target="_blank" rel="noopener" class="company-link">Tech Mahindra GmbH ↗</a></h3>
-        <div class="log-meta">Sep 2021 — Present · Berlin, Germany</div>
-        <ul>
-          <li>Implement microservices in Spring Boot.</li>
-          <li>Own coding, code analysis, testing and code review end to end.</li>
-          <li>Translate business requirements into well-defined technical stories.</li>
-          <li>Assess technical feasibility and finalize solutions for business requirements.</li>
-        </ul>
-      </div>
-      <div class="log-entry">
-        <span class="log-hash">#7bd430a</span>
-        <h3>Lead Developer — <a href="https://www.nomura.com" target="_blank" rel="noopener" class="company-link">Nomura Services Pvt Ltd ↗</a></h3>
-        <div class="log-meta">Mar 2018 — Sep 2021 · Mumbai, India</div>
-        <ul>
-          <li>Designed microservices in Spring Boot.</li>
-          <li>Built front-end interfaces in React.js consuming those services.</li>
-          <li>Owned requirement analysis and code management for the team.</li>
-        </ul>
-      </div>
-      <div class="log-entry">
-        <span class="log-hash">#2e6f118</span>
-        <h3>Senior Software Engineer — <a href="https://www.teradata.com" target="_blank" rel="noopener" class="company-link">Teradata Labs ↗</a></h3>
-        <div class="log-meta">Jan 2017 — Mar 2018 · Hyderabad, India</div>
-        <ul>
-          <li>Designed microservices in Spring Boot.</li>
-          <li>Handled client request analysis.</li>
-        </ul>
-      </div>
-      <div class="log-entry">
-        <span class="log-hash">#5a13de9</span>
-        <h3>Technology Specialist — <a href="https://www.wellsfargo.com" target="_blank" rel="noopener" class="company-link">Wells Fargo ↗</a></h3>
-        <div class="log-meta">Jul 2014 — Dec 2016 · Hyderabad, India</div>
-        <ul>
-          <li>Built a project from scratch following an Agile approach using Java/Spring.</li>
-          <li>Owned requirement understanding, prototyping, development and testing of new tech.</li>
-        </ul>
-      </div>
-      <div class="log-entry">
-        <span class="log-hash">#0f2a7c1</span>
-        <h3>Software Engineer — <a href="https://www.hsbc.com" target="_blank" rel="noopener" class="company-link">HSBC Bank ↗</a></h3>
-        <div class="log-meta">May 2012 — Jul 2014 · Hyderabad, India</div>
-        <ul>
-          <li>Worked on risk management and compliance systems.</li>
-          <li>Analyzed and created user stories.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <section id="experience" class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">experience</div>
+          <h2>Where I've worked</h2>
+        </div>
+        <div class="log reveal">
+          <div class="log-entry">
+            <span class="log-hash">#current</span>
+            <h3>
+              Lead Developer —
+              <a
+                href="https://www.techmahindra.com"
+                target="_blank"
+                rel="noopener"
+                class="company-link"
+                >Tech Mahindra GmbH ↗</a
+              >
+            </h3>
+            <div class="log-meta">Sep 2021 — Present · Berlin, Germany</div>
+            <ul>
+              <li>Implement microservices in Spring Boot.</li>
+              <li>
+                Own coding, code analysis, testing and code review end to end.
+              </li>
+              <li>
+                Translate business requirements into well-defined technical
+                stories.
+              </li>
+              <li>
+                Assess technical feasibility and finalize solutions for business
+                requirements.
+              </li>
+            </ul>
+          </div>
+          <div class="log-entry">
+            <span class="log-hash">#7bd430a</span>
+            <h3>
+              Lead Developer —
+              <a
+                href="https://www.nomura.com"
+                target="_blank"
+                rel="noopener"
+                class="company-link"
+                >Nomura Services Pvt Ltd ↗</a
+              >
+            </h3>
+            <div class="log-meta">Mar 2018 — Sep 2021 · Mumbai, India</div>
+            <ul>
+              <li>Designed microservices in Spring Boot.</li>
+              <li>
+                Built front-end interfaces in React.js consuming those services.
+              </li>
+              <li>
+                Owned requirement analysis and code management for the team.
+              </li>
+            </ul>
+          </div>
+          <div class="log-entry">
+            <span class="log-hash">#2e6f118</span>
+            <h3>
+              Senior Software Engineer —
+              <a
+                href="https://www.teradata.com"
+                target="_blank"
+                rel="noopener"
+                class="company-link"
+                >Teradata Labs ↗</a
+              >
+            </h3>
+            <div class="log-meta">Jan 2017 — Mar 2018 · Hyderabad, India</div>
+            <ul>
+              <li>Designed microservices in Spring Boot.</li>
+              <li>Handled client request analysis.</li>
+            </ul>
+          </div>
+          <div class="log-entry">
+            <span class="log-hash">#5a13de9</span>
+            <h3>
+              Technology Specialist —
+              <a
+                href="https://www.wellsfargo.com"
+                target="_blank"
+                rel="noopener"
+                class="company-link"
+                >Wells Fargo ↗</a
+              >
+            </h3>
+            <div class="log-meta">Jul 2014 — Dec 2016 · Hyderabad, India</div>
+            <ul>
+              <li>
+                Built a project from scratch following an Agile approach using
+                Java/Spring.
+              </li>
+              <li>
+                Owned requirement understanding, prototyping, development and
+                testing of new tech.
+              </li>
+            </ul>
+          </div>
+          <div class="log-entry">
+            <span class="log-hash">#0f2a7c1</span>
+            <h3>
+              Software Engineer —
+              <a
+                href="https://www.hsbc.com"
+                target="_blank"
+                rel="noopener"
+                class="company-link"
+                >HSBC Bank ↗</a
+              >
+            </h3>
+            <div class="log-meta">May 2012 — Jul 2014 · Hyderabad, India</div>
+            <ul>
+              <li>Worked on risk management and compliance systems.</li>
+              <li>Analyzed and created user stories.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- PROJECTS -->
       <section id="projects" class="wrap">
@@ -1069,7 +1137,7 @@
             <div class="ico">GH</div>
             <div>
               <div class="lbl">GitHub</div>
-              <div class="val">turtlestrades</div>
+              <div class="val">github.com/turtlestrades</div>
             </div>
           </a>
           <a
@@ -1081,7 +1149,7 @@
             <div class="ico">in</div>
             <div>
               <div class="lbl">LinkedIn</div>
-              <div class="val">turtlestrades</div>
+              <div class="val">linkedin.com/in/turtlestrades</div>
             </div>
           </a>
           <a href="Jeet_Resume.pdf" download class="contact-card">
